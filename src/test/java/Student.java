@@ -31,4 +31,15 @@ public class Student {
         }
         return average/grades.size();
     }
+
+    public boolean deleteGrade(Integer i){
+        return grades.remove(i);
+    }
+
+    public boolean updateGrade(Integer grade, Integer newGrade){
+        if(grades.contains(grade)){
+            grades.set(grades.indexOf(grade), newGrade);
+            return true;
+        } else return false;
+    }
 }

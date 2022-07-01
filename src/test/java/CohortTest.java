@@ -1,7 +1,11 @@
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import com.google.common.collect.Lists;
 
+
+
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -11,6 +15,8 @@ public class CohortTest {
     @Before
     public void setUp(){
         umbriel = new Cohort();
+        List<String> str1 = new ArrayList<>();
+        List<String> str2 = Lists.reverse(str1);
 
     }
 //ToDone
